@@ -1,0 +1,37 @@
+$default: #fff;
+$accent: #980d0d;
+
+%montserrat-300{
+  font-family: 'Montserrat-Light', sans-serif;
+  font-weight: 300;
+}
+
+%montserrat-400{
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%montserrat-700{
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%montserrat-800{
+  font-family: 'Montserrat-ExtraBold', sans-serif;
+  font-weight: 800;
+}
+
+%montserrat-900{
+  font-family: 'Montserrat-Black', sans-serif;
+  font-weight: 900;
+}
+
+%btn{
+  border-radius: 7px;
+  padding: 16px 29px;
+  @extend %montserrat-800;
+  color: $default;
+  font-size: 17px;
+  line-height: 1;
+  display: inline-block;
+}
