@@ -16,3 +16,9 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.title{
+  @extend %montserrat-800;
+  font-size: 35px;
+  margin-bottom: 62px;
+}
