@@ -171,7 +171,7 @@
 
 .results{
   padding-top: 185px;
-  margin-bottom: 130px;
+  margin-bottom: 80px;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -281,6 +281,121 @@
 
 .slick-next{
   right: -52px;
+}
+
+.connection{
+  padding-top: 110px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item-form{
+    max-width: 327px;
+  }
+  &__item-form-title{
+    margin-bottom: 18px;
+  }
+}
+
+.connection__item-form-title,
+.contact__title,
+.map__title{
+  @extend %montserrat-800;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form {
+  &__input,
+  &__textarea{
+    display: block;
+    margin-bottom: 13px;
+    padding: 13px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $default;
+    font-size: 14px;
+    color: #e3e3e3;
+    background-color: transparent;
+  }
+  &__textarea{
+    resize: none;
+    min-height: 100px;
+    margin-bottom: 27px;
+  }
+  &__btn{
+    width: 100%;
+    @extend %btn;
+    background-color: $accent;
+    padding: 16px 0;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.contact{
+  margin: 0 55px 75px;
+  max-width: 240px;
+  &__title{
+    margin-bottom: 55px;
+  }
+  &__list-item{
+    margin-bottom: 26px;
+    padding-left: 33px;
+    position: relative;
+    a{
+      color: $default;
+    }
+    &:last-child{
+      margin-bottom: 54px;
+    }
+  }
+  &__text{
+    margin: 35px 0 25px;
+  }
+  &__list-social{
+    display: flex;
+  }
+  &__list-social-item + .contact__list-social-item{
+    margin-left: 20px;
+  }
+}
+
+.mail::before,
+.phone::before,
+.fax::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mail::before{
+  background-image: url(../images/mail-icon.svg);
+  width: 18px;
+  height: 18px;
+}
+
+.phone::before{
+  background-image: url(../images/phone-icon.svg);
+  width: 14px;
+  height: 14px;
+}
+
+.fax::before{
+  background-image: url(../images/fax-icon.svg);
+  width: 14px;
+  height: 14px;
+}
+
+.map{
+  &__title{
+    margin-bottom: 55px;
+  }
 }
 
 @import 'media';
