@@ -131,13 +131,21 @@
 }
 
 .about-content{
-  padding-top: 175px
+  padding-top: 175px;
+  display: flex;
+  &__img{
+    margin-top: -105px;
+    margin-left: 135px;
+    width: 336px;
+    height: 636px;
+    object-fit: cover;
+  }
 }
 
 
 .about-tabs{
+  max-width: 573px;
   &__top{
-    max-width: 573px;
     margin-bottom: 38px;
     padding-bottom: 6px;
     border-bottom: 1px solid #2d2d2e;
@@ -170,7 +178,7 @@
 }
 
 .results{
-  padding-top: 185px;
+  padding-top: 70px;
   margin-bottom: 80px;
   &__inner{
     display: flex;
@@ -194,6 +202,12 @@
 .container-slider{
   max-width: 550px;
   margin: 0 auto;
+}
+
+.bg-box{
+  background-image: url(../images/bg-connection.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .slider{
