@@ -1,0 +1,19 @@
+<svg id="Группа_4" data-name="Группа 4" xmlns="http://www.w3.org/2000/svg" width="11.688" height="21.71" viewBox="0 0 11.688 21.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Группа_2" data-name="Группа 2">
+    <path id="Фигура_2" data-name="Фигура 2" class="cls-1" d="M645.664,2107.63l0.672,0.74-11,10-0.672-.74Z" transform="translate(-634.656 -2107.63)"/>
+    <path id="Фигура_3" data-name="Фигура 3" class="cls-1" d="M634.646,2118.35l0.708-.7,10,10-0.708.7Z" transform="translate(-634.656 -2107.63)"/>
+    <path id="Фигура_4" data-name="Фигура 4" class="cls-1" d="M644.646,2128.35l0.708-.7,1,1-0.708.7Z" transform="translate(-634.656 -2107.63)"/>
+  </g>
+  <g id="Группа_3" data-name="Группа 3">
+    <path id="Фигура_5" data-name="Фигура 5" class="cls-1" d="M646.354,2127.65l-0.708.7-10-10,0.708-.7Z" transform="translate(-634.656 -2107.63)"/>
+    <path id="Фигура_6" data-name="Фигура 6" class="cls-1" d="M636.334,2118.37l-0.668-.74,10-9,0.668,0.74Z" transform="translate(-634.656 -2107.63)"/>
+  </g>
+</svg>
