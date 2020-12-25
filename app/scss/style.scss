@@ -398,4 +398,31 @@
   }
 }
 
+.footer{
+  padding-bottom: 30px;
+  background-color: #161616;
+  &__inner{
+    padding: 27px 0 14px;
+  }
+  &__copy{
+    font-size: 13px;
+    color: #424242;
+    text-align: center;
+  }
+}
+
+.menu-footer{
+  margin-left: 175px;
+}
+
+.menu__list-link--footer{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.651);
+  &:hover{
+    color: rgba(255, 255, 255, 0.651);
+    border: none;
+  }
+}
+
+
 @import 'media';
