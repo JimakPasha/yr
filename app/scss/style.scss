@@ -64,9 +64,10 @@
   }
   &__img{
     width: 393px;
-    height: 393px;
     object-fit: cover;
     margin-left: 25px;
+    max-width: 100%;
+    max-height: 100%;
   }
   &__social{
     display: flex;
@@ -74,6 +75,15 @@
   }
   &__social-link + .header__social-link{
     margin-left: 24px;
+  }
+}
+
+
+.logo{
+  &__img{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
   }
 }
 
@@ -93,6 +103,9 @@
       color: #a2a1a1;
       border-bottom: 1px solid #8c8c8c;
     }
+  }
+  &__btn{
+    display: none;
   }
 }
 
@@ -417,6 +430,8 @@
   background-color: #161616;
   &__inner{
     padding: 27px 0 14px;
+    display: flex;
+    justify-content: space-between;
   }
   &__copy{
     font-size: 13px;
@@ -427,16 +442,30 @@
 
 .menu-footer{
   margin-left: 175px;
-}
-
-.menu__list-link--footer{
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.651);
-  &:hover{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu-footer__list-item{
+    margin-left: 47px;
+  }
+  &__list-link{
+    font-size: 14px;
     color: rgba(255, 255, 255, 0.651);
-    border: none;
+    line-height: 53px;
+    color: $default;
+    transition: all .3s;
+    &:hover{
+      color: rgba(255, 255, 255, 0.651);
+      border: none;
+    }
   }
 }
+
+.btn-call-footer{
+  @extend %btn;
+  border: 1px solid $default;
+}
+
 
 
 @import 'media';

@@ -22,3 +22,42 @@ body{
   font-size: 35px;
   margin-bottom: 62px;
 }
+
+.menu__list-link,
+.mail,
+.phone,
+.fax{
+  outline: none;
+  &:focus{
+    text-shadow: 2px 1px 24px rgb(255,255,255);
+  }
+}
+
+.btn-call{
+  outline: none;
+  &:focus{
+    box-shadow: 2px 1px 21px rgba(255,255,255,0.7);
+  }
+}
+
+.header__info-link,
+.form__btn{
+  outline: none;
+  &:focus{
+    box-shadow: 2px 1px 24px rgb(152,13,13);
+  }
+}
+
+.about-tabs__top-item{
+  outline: none;
+  &:focus{
+    text-shadow: 2px 1px 24px rgb(255,255,255);
+  }
+}
+
+.about-tabs__top-item--active{
+    outline: none;
+  &:focus{
+    text-shadow: 2px 1px 24px rgb(152,13,13);
+  }
+}

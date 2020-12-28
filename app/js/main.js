@@ -1,5 +1,16 @@
 $(function () {
 
+  $('.menu__btn').on('click', function (){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu a').on('click', function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top }, 1100);
+  });
+
 
   $('.slider__items').slick({
     dots: true,
