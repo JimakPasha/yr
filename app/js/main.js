@@ -14,10 +14,18 @@ $(function () {
 
   $('.slider__items').slick({
     dots: true,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="arrow-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="arrow-next"></button>',
     fade: true,
-    autoplay: true
+    autoplay: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/arrow-prev.svg" alt="arrow-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/arrow-next.svg" alt="arrow-next"></button>', responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      },
+    ]
+    
   });
 
 

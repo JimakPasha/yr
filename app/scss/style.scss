@@ -117,6 +117,7 @@
 .info{
   display: flex;
   justify-content: space-between;
+  column-gap: 20px;
   margin-top: -60px;
   &__item{
     padding: 25px 32px;
@@ -124,10 +125,7 @@
     background-color: #161617;
     opacity: 0.85;
     border-radius: 5px;
-    max-width: 270px;
-    & + .info__item{
-      margin-left: 30px;
-    }
+    width: 270px;
   }
   &__img{
     margin: 0 auto 5px;
@@ -196,6 +194,7 @@
   &__inner{
     display: flex;
     justify-content: space-between;
+    column-gap: 20px;
   }
   &__item{
     text-align: center;
@@ -312,6 +311,7 @@
 
 .connection{
   padding-top: 110px;
+  padding-bottom: 70px;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -361,7 +361,7 @@
 }
 
 .contact{
-  margin: 0 55px 75px;
+  margin: 0 55px;
   max-width: 240px;
   &__title{
     margin-bottom: 55px;
@@ -464,6 +464,10 @@
 .btn-call-footer{
   @extend %btn;
   border: 1px solid $default;
+}
+
+#map-small{
+  display: none;
 }
 
 
