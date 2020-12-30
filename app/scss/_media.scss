@@ -131,6 +131,9 @@
     &__list-link{
       padding: 12px 0;
       display: block;
+      &:hover{
+        border-bottom: none;
+      }
     }
   }
   .btn-call{
@@ -155,6 +158,9 @@
     max-width: 100%;
     &__content-item{
       max-width: 100%;
+    }
+    &__top-item{
+      padding-right: 0;
     }
   }
 }
@@ -213,6 +219,12 @@
   .bg-box{
     background-position: 94% center;
   }
+  .btn-call-footer{
+    order: -1;
+  }
+  .logo-footer{
+    order: 1;
+  }
 }
 
 @media (max-width: 600px){
@@ -257,16 +269,18 @@
   }
   .about-tabs{
     &__top{
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: 13px;
       padding-bottom: 0;
       margin-bottom: 28px;
+    }
+    &__top-item{
+      display: block;
+      margin-bottom: 10px;
     }
     &__top-item+.about-tabs__top-item {
       margin-left: 0;
     }
     .about-tabs__top-item--active {
+      border-bottom: none;
       padding-bottom: 0;
     }
   }
