@@ -1,0 +1,64 @@
+html,
+body{
+  height: 100%;
+}
+
+body{
+  background-color: #0d0d0e;
+  color: $default;
+  font-size: 15px;
+  line-height: 22px;
+  @extend %montserrat-400;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  @extend %montserrat-800;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 62px;
+}
+
+.menu__list-link,
+.mail,
+.phone,
+.fax{
+  outline: none;
+  &:focus{
+    text-shadow: 2px 1px 24px rgb(255,255,255);
+  }
+}
+
+.btn-call{
+  outline: none;
+  &:focus{
+    box-shadow: 2px 1px 21px rgba(255,255,255,0.7);
+  }
+}
+
+.header__info-link,
+.form__btn{
+  outline: none;
+  &:focus{
+    box-shadow: 2px 1px 24px rgb(152,13,13);
+  }
+}
+
+.about-tabs__top-item{
+  outline: none;
+  &:focus{
+    text-shadow: 2px 1px 24px rgb(255,255,255);
+  }
+}
+
+.about-tabs__top-item--active{
+    outline: none;
+  &:focus{
+    text-shadow: 2px 1px 24px rgb(152,13,13);
+  }
+}
