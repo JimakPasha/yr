@@ -1,5 +1,6 @@
 $default: #fff;
 $accent: #980d0d;
+$hover: rgba(255, 255, 255, 0.8);
 
 %montserrat-300{
   font-family: 'Montserrat-Light', sans-serif;
@@ -34,4 +35,17 @@ $accent: #980d0d;
   font-size: 17px;
   line-height: 1;
   display: inline-block;
+  transition: all .3s;
+  &:hover{
+    background-color: $hover;
+    color: $accent;
+  }
+  &:active{
+    @extend %click;
+  }
+}
+
+%click{
+  transition: all .3s;
+  transform: scale(0.9);
 }
